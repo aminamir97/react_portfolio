@@ -1,3 +1,4 @@
+import Script from "next/script";
 import React from "react";
 
 export const FooterSection = () => {
@@ -16,15 +17,18 @@ export const FooterSection = () => {
               </p>
               <p>
                 {" "}
-                Link back to Colorlib can't be removed. Template is licensed
+                Link back to Colorlib cant be removed. Template is licensed
                 under CC BY 3.0. Copyright &copy;
-                <script>document.write(new Date().getFullYear());</script> All
-                rights reserved | This template is made with{" "}
+                {new Date().getFullYear()}
+                All rights reserved | This template is made with{" "}
                 <i className="fa fa-heart-o" aria-hidden="true"></i> by{" "}
-                <a href="https://colorlib.com" target="_blank">
+                <a
+                  href="https://colorlib.com"
+                  // target="_blank"
+                >
                   Colorlib
                 </a>
-                Link back to Colorlib can't be removed. Template is licensed
+                Link back to Colorlib cant be removed. Template is licensed
                 under CC BY 3.0.{" "}
               </p>
             </aside>
@@ -37,7 +41,7 @@ export const FooterSection = () => {
               <p>Stay updated with our latest trends</p>
               <div id="mc_embed_signup">
                 <form
-                  target="_blank"
+                  //   target="_blank"
                   action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
                   method="get"
                   className="subscribe_form relative"
@@ -46,8 +50,6 @@ export const FooterSection = () => {
                     <input
                       name="EMAIL"
                       placeholder="Enter email address"
-                      onfocus="this.placeholder = ''"
-                      onblur="this.placeholder = 'Email Address '"
                       required=""
                       type="email"
                     />
