@@ -1,8 +1,8 @@
 import React from "react";
 
-export const FeatureSection = () => {
+export const FeatureSection = (props) => {
   return (
-    <section className="feature_area p_120">
+    <section ref={props.ref} className="feature_area p_120">
       <div className="container">
         <div className="main_title">
           <h2>offerings to my clients</h2>

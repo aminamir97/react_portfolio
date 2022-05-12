@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
+import { useInView } from "react-hook-inview";
 
 export const TabsSection = () => {
+  const [re, isVisible] = useInView({
+    threshold: 0,
+  });
+  const [shown, setShown] = useState(false);
+  const [classy, setClassy] = useState("mytabs_area p_120 ");
+  useEffect(() => {
+    if (!shown)
+      if (isVisible) {
+        console.log("is visible now " + isVisible);
+        setClassy("mytabs_area p_120  animate__animated animate__zoomInUp");
+
+        setShown(true);
+      } else {
+        setClassy("mytabs_area p_120");
+      }
+  }, [isVisible]);
   return (
     //   <!--================My Tabs Area =================-->
-    <section className="mytabs_area p_120">
+    <section ref={re} className={classy}>
       <div className="container">
         <div className="tabs_inner">
           <ul className="nav nav-tabs" id="myTab" role="tablist">
