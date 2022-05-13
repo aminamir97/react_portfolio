@@ -18,8 +18,8 @@ export const HeaderOver = () => {
         <div className="banner_inner d-flex align-items-center">
           <div className="banner_content">
             <div className="media">
-              <div className="d-flex">
-                <img src="img/amino.png" alt="" />
+              <div className="d-flex anima animate__animated animate__fadeInRightBig">
+                <img src="img/amin.png" alt="" />
               </div>
               <div className="media-body">
                 <div className="personal_text">

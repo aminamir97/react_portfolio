@@ -4,6 +4,10 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+        />
         <link rel="stylesheet" href="css/bootstrap.css" />
         <link rel="stylesheet" href="vendors/linericon/style.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css" />

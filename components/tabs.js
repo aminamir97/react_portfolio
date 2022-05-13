@@ -61,7 +61,7 @@ export const TabsSection = () => {
               <ul className="list">
                 <li>
                   <span></span>
-                  <div className="media">
+                  <div className="media animate__animated animate__fadeInRightBig">
                     <div className="d-flex">
                       <p>March 2017 to present</p>
                     </div>
