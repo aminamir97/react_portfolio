@@ -28,32 +28,32 @@ export const AboutMe = () => {
             <div className="welcome_text">
               <h4>About Myself</h4>
               <p>
-                inappropriate behavior is often laughed off as “boys will be
-                boys,” women face higher conduct standards especially in the
-                workplace. That’s why it’s crucial that, as women, our behavior
-                on the job is beyond reproach. inappropriate behavior is often
-                laughed.
+                Always dream about creating big things , to achieve as must as
+                possible and to be able to build any size of the software
+                project , always passionate about being able to work on any part
+                of a software project to be able to fit in alot of positions in
+                any team.
               </p>
               <div className="row">
                 <div className="col-md-4">
                   <div className="wel_item">
-                    <i className="lnr lnr-database"></i>
-                    <h4>$2.5M</h4>
-                    <p>Total Donation</p>
+                    <i className="lnr lnr-users"></i>
+                    <h4>10+</h4>
+                    <p>Happy clients</p>
                   </div>
                 </div>
                 <div className="col-md-4">
                   <div className="wel_item">
                     <i className="lnr lnr-book"></i>
-                    <h4>1465</h4>
+                    <h4>10+</h4>
                     <p>Total Projects</p>
                   </div>
                 </div>
                 <div className="col-md-4">
                   <div className="wel_item">
-                    <i className="lnr lnr-users"></i>
-                    <h4>3965</h4>
-                    <p>Total Volunteers</p>
+                    <i className="lnr lnr-code"></i>
+                    <h4>5</h4>
+                    <p>Years Experiance</p>
                   </div>
                 </div>
               </div>
@@ -64,12 +64,15 @@ export const AboutMe = () => {
               <div className="skill_main" style={{}}>
                 <div className="skill_item">
                   <h4>
-                    After Effects <span className="counter">85</span>%
+                    React JS <span className="counter">70</span>%
                   </h4>
                   <div className="progress_br">
                     <div
                       className="progress"
-                      style={{ width: "20%", backgroundColor: "red" }}
+                      style={{
+                        width: "70%",
+                        background: "linear-gradient(#314755 0%, #26a0da 100%)",
+                      }}
                     >
                       <div
                         className="progress-bar"
@@ -83,14 +86,20 @@ export const AboutMe = () => {
                 </div>
                 <div className="skill_item">
                   <h4>
-                    Photoshop <span className="counter">90</span>%
+                    Flutter <span className="counter">90</span>%
                   </h4>
                   <div className="progress_br">
-                    <div className="progress">
+                    <div
+                      className="progress"
+                      style={{
+                        width: "90%",
+                        background: "linear-gradient(#314755 0%, #26a0da 100%)",
+                      }}
+                    >
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        aria-valuenow="90"
+                        aria-valuenow="85"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       ></div>
@@ -99,14 +108,20 @@ export const AboutMe = () => {
                 </div>
                 <div className="skill_item">
                   <h4>
-                    Illustrator <span className="counter">70</span>%
+                    Android-Java <span className="counter">75</span>%
                   </h4>
                   <div className="progress_br">
-                    <div className="progress">
+                    <div
+                      className="progress"
+                      style={{
+                        width: "75%",
+                        background: "linear-gradient(#314755 0%, #26a0da 100%)",
+                      }}
+                    >
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        aria-valuenow="70"
+                        aria-valuenow="85"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       ></div>
@@ -115,14 +130,20 @@ export const AboutMe = () => {
                 </div>
                 <div className="skill_item">
                   <h4>
-                    Sublime <span className="counter">95</span>%
+                    Next JS <span className="counter">80</span>%
                   </h4>
                   <div className="progress_br">
-                    <div className="progress">
+                    <div
+                      className="progress"
+                      style={{
+                        width: "80%",
+                        background: "linear-gradient(#314755 0%, #26a0da 100%)",
+                      }}
+                    >
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        aria-valuenow="95"
+                        aria-valuenow="85"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       ></div>
@@ -131,14 +152,42 @@ export const AboutMe = () => {
                 </div>
                 <div className="skill_item">
                   <h4>
-                    Sketch <span className="counter">75</span>%
+                    Agile Scrum <span className="counter">70</span>%
                   </h4>
                   <div className="progress_br">
-                    <div className="progress">
+                    <div
+                      className="progress"
+                      style={{
+                        width: "70%",
+                        background: "linear-gradient(#314755 0%, #26a0da 100%)",
+                      }}
+                    >
                       <div
                         className="progress-bar"
                         role="progressbar"
-                        aria-valuenow="75"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="skill_item">
+                  <h4>
+                    PHP <span className="counter">50</span>%
+                  </h4>
+                  <div className="progress_br">
+                    <div
+                      className="progress"
+                      style={{
+                        width: "50%",
+                        background: "linear-gradient(#314755 0%, #26a0da 100%)",
+                      }}
+                    >
+                      <div
+                        className="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="85"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       ></div>

@@ -19,55 +19,59 @@ export const HeaderOver = () => {
           <div className="banner_content">
             <div className="media">
               <div className="d-flex anima animate__animated animate__fadeInRightBig">
-                <img src="img/amin.png" alt="" />
+                <img
+                  src="img/amin.png"
+                  alt=""
+                  style={{ borderRadius: "10px" }}
+                />
               </div>
               <div className="media-body">
                 <div className="personal_text">
-                  <h6>Hello Everybody, i am</h6>
+                  <h6>Hello Everybody, this is</h6>
                   <h3>Amin Alameer</h3>
                   <h4>Intermediate Software Developer</h4>
                   <p>
-                    You will begin to realise why this exercise is called the
-                    Dickens Pattern (with reference to the ghost showing Scrooge
-                    some different futures)
+                    Always believing that the key of success is being passionate
+                    , working in Web full-stack & Mobile developement including
+                    Android and IOS
                   </p>
                   <ul className="list basic_info">
                     <li>
-                      <a href="#">
-                        <i className="lnr lnr-calendar-full"></i> 31st December,
-                        1992
+                      <a href="">
+                        <i className="lnr lnr-calendar-full"></i> 13th
+                        September, 1997
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="lnr lnr-phone-handset"></i> 44 (012) 6954
-                        783
+                      <a href="tel:+962796638930">
+                        <i className="lnr lnr-phone-handset"></i> +962796638930
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="lnr lnr-envelope"></i> businessplan@donald
+                      <a href="mailto:amin.alameer9@gmail.com">
+                        <i className="lnr lnr-envelope"></i>{" "}
+                        amin.alameer9@gmail.com
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="lnr lnr-home"></i> Santa monica bullevard
+                      <a href="https://goo.gl/maps/JyLk8Q4HUfZaVoDw9">
+                        <i className="lnr lnr-home"></i> Amman / Jordan
                       </a>
                     </li>
                   </ul>
                   <ul className="list personal_social">
                     <li>
-                      <a href="#">
+                      <a href="https://www.facebook.com/profile.php?id=100008950745508">
                         <i className="fa fa-facebook"></i>
                       </a>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="#">
                         <i className="fa fa-twitter"></i>
                       </a>
-                    </li>
+                    </li> */}
                     <li>
-                      <a href="#">
+                      <a href="https://www.linkedin.com/in/amin-alameer-ab866b11a/">
                         <i className="fa fa-linkedin"></i>
                       </a>
                     </li>
