@@ -1,10 +1,64 @@
+import { Modal, Box, Dialog, Button } from "@mui/material";
 import React, { useRef, useEffect, useState } from "react";
 import { useInView } from "react-hook-inview";
+import { Slider } from "./gallery/slider";
+import CloseIcon from "@mui/icons-material/Close";
+import { ProjectItem } from "./gallery/projecItem";
+import { ControlCameraTwoTone } from "@mui/icons-material";
+
+const webList = [
+  {
+    title: "alkabbash website",
+    desc: "web wordpress website",
+    img: "",
+    key: 1,
+  },
+  {
+    title: "ascot web",
+    desc: "web wordpress website",
+    img: "",
+    key: 2,
+  },
+  {
+    title: "amin web",
+    desc: "web wordpress website",
+    img: "",
+    key: 3,
+  },
+  {
+    title: "sofya web",
+    desc: "web wordpress website",
+    img: "",
+    key: 4,
+  },
+];
+const mobileList = [
+  {
+    title: "Newsi app",
+    desc: "web wordpress website",
+    img: "",
+    key: 5,
+  },
+  {
+    title: "Spell me app",
+    desc: "web wordpress website",
+    img: "",
+    key: 6,
+  },
+];
 
 export const Gallery = () => {
+  const [funky, setFunky] = useState("");
   const [re, isVisible] = useInView({
     threshold: 0,
   });
+  const activeList = [];
+  const [showModal, setShowModal] = useState(true);
+  const [selectedMenu, setMenu] = useState({
+    indx: 0,
+    val: [].concat(webList).concat(mobileList),
+  });
+  //0 all , 1 web 2 mobile
   const [shown, setShown] = useState(false);
   const [classy, setClassy] = useState("home_gallery_area p_120 ");
   useEffect(() => {
@@ -20,6 +74,30 @@ export const Gallery = () => {
         setClassy("home_gallery_area p_120");
       }
   }, [isVisible]);
+  function menuChanged(selected) {
+    if (selected === 4) {
+      setMenu({ indx: 0, val: [].concat(webList).concat(mobileList) });
+    } else if (selected == 1) {
+      setMenu({ indx: 1, val: webList });
+    } else {
+      setMenu({ indx: 2, val: mobileList });
+    }
+  }
+  useEffect(() => {
+    console.log("use effect started");
+    setFunky(
+      "gallery_f_inner row imageGallery1 animate__animated animate__zoomIn"
+    );
+    const timer = setTimeout(() => {
+      setFunky("gallery_f_inner row imageGallery1");
+
+      console.log("This will run after 1 second!");
+    }, 1000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [selectedMenu]);
   return (
     <section ref={re} className={classy}>
       <div className="container">
@@ -29,141 +107,40 @@ export const Gallery = () => {
         </div>
         <div className="isotope_fillter">
           <ul className="gallery_filter list">
-            <li className="active" data-filter="*">
-              <a href="#">All</a>
+            <li
+              className={selectedMenu.indx === 0 ? "active" : ""}
+              data-filter="*"
+            >
+              <a onClick={() => menuChanged(0)}>All</a>
             </li>
-            <li data-filter=".brand">
-              <a href="#">Vector</a>
+            <li className={selectedMenu.indx === 1 ? "active" : ""}>
+              <a onClick={() => menuChanged(1)}>Web</a>
             </li>
-            <li data-filter=".manipul">
-              <a href="#">Raster</a>
-            </li>
-            <li data-filter=".creative">
-              <a href="#">UI/UX</a>
-            </li>
-            <li data-filter=".design">
-              <a href="#">Printing</a>
+            <li className={selectedMenu.indx === 2 ? "active" : ""}>
+              <a onClick={() => menuChanged(2)}>Mobile</a>
             </li>
           </ul>
         </div>
       </div>
       <div className="container">
-        <div className="gallery_f_inner row imageGallery1">
-          <div className="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
-            <div className="h_gallery_item">
-              <div className="g_img_item">
-                <img
-                  className="img-fluid"
-                  src="img/gallery/project-1.jpg"
-                  alt=""
-                />
-                <a className="light" href="img/gallery/project-1.jpg">
-                  <img src="img/gallery/icon.png" alt="" />
-                </a>
-              </div>
-              <div className="g_item_text">
-                <h4>3D Helmet Design</h4>
-                <p>Client Project</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
-            <div className="h_gallery_item">
-              <div className="g_img_item">
-                <img
-                  className="img-fluid"
-                  src="img/gallery/project-2.jpg"
-                  alt=""
-                />
-                <a className="light" href="img/gallery/project-2.jpg">
-                  <img src="img/gallery/icon.png" alt="" />
-                </a>
-              </div>
-              <div className="g_item_text">
-                <h4>2D Vinyl Design</h4>
-                <p>Client Project</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
-            <div className="h_gallery_item">
-              <div className="g_img_item">
-                <img
-                  className="img-fluid"
-                  src="img/gallery/project-3.jpg"
-                  alt=""
-                />
-                <a className="light" href="img/gallery/project-3.jpg">
-                  <img src="img/gallery/icon.png" alt="" />
-                </a>
-              </div>
-              <div className="g_item_text">
-                <h4>Creative Poster Design</h4>
-                <p>Client Project</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-4 col-sm-6 brand creative print">
-            <div className="h_gallery_item">
-              <div className="g_img_item">
-                <img
-                  className="img-fluid"
-                  src="img/gallery/project-4.jpg"
-                  alt=""
-                />
-                <a className="light" href="img/gallery/project-4.jpg">
-                  <img src="img/gallery/icon.png" alt="" />
-                </a>
-              </div>
-              <div className="g_item_text">
-                <h4>Embosed Logo Design</h4>
-                <p>Client Project</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-4 col-sm-6 brand manipul design">
-            <div className="h_gallery_item">
-              <div className="g_img_item">
-                <img
-                  className="img-fluid"
-                  src="img/gallery/project-5.jpg"
-                  alt=""
-                />
-                <a className="light" href="img/gallery/project-5.jpg">
-                  <img src="img/gallery/icon.png" alt="" />
-                </a>
-              </div>
-              <div className="g_item_text">
-                <h4>3D Disposable Bottle</h4>
-                <p>Client Project</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-4 col-sm-6 brand creative">
-            <div className="h_gallery_item">
-              <div className="g_img_item">
-                <img
-                  className="img-fluid"
-                  src="img/gallery/project-6.jpg"
-                  alt=""
-                />
-                <a className="light" href="img/gallery/project-6.jpg">
-                  <img src="img/gallery/icon.png" alt="" />
-                </a>
-              </div>
-              <div className="g_item_text">
-                <h4>3D Logo Design</h4>
-                <p>Client Project</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="more_btn">
-          <a className="main_btn" href="#">
-            Load More Items
-          </a>
+        <div className={funky}>
+          {selectedMenu.val.map((item) => (
+            <ProjectItem key={item.key} data={item} />
+          ))}
         </div>
       </div>
     </section>
   );
+};
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 400,
+  height: 500,
+  bgcolor: "background.paper",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: 4,
 };
