@@ -75,7 +75,7 @@ export const Gallery = () => {
       }
   }, [isVisible]);
   function menuChanged(selected) {
-    if (selected === 4) {
+    if (selected === 0) {
       setMenu({ indx: 0, val: [].concat(webList).concat(mobileList) });
     } else if (selected == 1) {
       setMenu({ indx: 1, val: webList });
@@ -92,7 +92,7 @@ export const Gallery = () => {
       setFunky("gallery_f_inner row imageGallery1");
 
       console.log("This will run after 1 second!");
-    }, 1000);
+    }, 900);
 
     return () => {
       clearTimeout(timer);
