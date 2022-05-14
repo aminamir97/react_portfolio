@@ -20,7 +20,7 @@ export const HeaderOver = () => {
             <div className="media">
               <div className="d-flex anima animate__animated animate__fadeInRightBig">
                 <img
-                  src="img/amin.png"
+                  src="img/amin.jpg"
                   alt=""
                   style={{ borderRadius: "10px" }}
                 />
