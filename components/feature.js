@@ -1,48 +1,60 @@
+import Image from "next/image";
 import React from "react";
+import reactImg from "../assets/react.png";
+import flutter from "../assets/flutter.png";
+import agile from "../assets/agile.png";
 
 export const FeatureSection = (props) => {
   return (
     <section ref={props.ref} className="feature_area p_120">
       <div className="container">
         <div className="main_title">
-          <h2>offerings to my clients</h2>
+          <h2>My Skills</h2>
           <p>
-            If you are looking at blank cassettes on the web, you may be very
-            confused at the difference in price. You may see some for as low as
-            $.17 each.
+            I am always working on gaining alot of skills in development and
+            managerial fields , always working on myself to learn more , here
+            are some of my skills
           </p>
         </div>
         <div className="feature_inner row">
           <div className="col-lg-4 col-md-6">
             <div className="feature_item">
-              <i className="flaticon-city"></i>
-              <h4>Architecture</h4>
+              {/* <i className="flaticon-react"></i> */}
+              <i>
+                <Image src={reactImg} height={50} width={50} style={{}} />
+              </i>
+
+              <h4>Web full-stack Developer</h4>
               <p>
-                If you are looking at blank cassettes on the web, you may be
-                very confused at the difference in price. You may see some for
-                as low as $17 each.
+                React, next js,node js and php made me able to handle large
+                scope of software projects and some server deployment skills
+                plus database management.
               </p>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="feature_item">
-              <i className="flaticon-skyline"></i>
-              <h4>Interior Design</h4>
+              <i>
+                <Image src={flutter} height={50} width={50} style={{}} />
+              </i>{" "}
+              <h4>Mobile Developer</h4>
               <p>
-                If you are looking at blank cassettes on the web, you may be
-                very confused at the difference in price. You may see some for
-                as low as $17 each.
+                Working with native and cross-platform by using Android-Java and
+                flutter with full customization for targeted platforms and
+                handling the APIs related
               </p>
             </div>
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="feature_item">
-              <i className="flaticon-sketch"></i>
-              <h4>Concept Design</h4>
+              <i>
+                <Image src={agile} height={50} width={60} style={{}} />
+              </i>
+              <h4>Team Management</h4>
               <p>
-                If you are looking at blank cassettes on the web, you may be
-                very confused at the difference in price. You may see some for
-                as low as $17 each.
+                when working in different software teams , i had gained good
+                experiance for being a team leader using the most useful
+                patterns and methodlogies like Agile Scrum...
               </p>
             </div>
           </div>
