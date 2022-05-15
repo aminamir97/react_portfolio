@@ -5,45 +5,60 @@ import { Slider } from "./gallery/slider";
 import CloseIcon from "@mui/icons-material/Close";
 import { ProjectItem } from "./gallery/projecItem";
 import { ControlCameraTwoTone } from "@mui/icons-material";
+import kabbashcover from "../assets/kabbashcover.jpg";
+import spellmewebcover from "../assets/spellmeappweb.jpg";
+import familycover from "../assets/familycover.jpg";
+import spellmeapp from "../assets/spellmecover.jpg";
+import suppliercover from "../assets/suppliercover.jpg";
+
+
+
+
 
 const webList = [
   {
     title: "alkabbash website",
     desc: "web wordpress website",
-    img: "",
+    img: kabbashcover.src,
     key: 1,
   },
   {
-    title: "ascot web",
-    desc: "web wordpress website",
-    img: "",
+    title: "SpellMe dashboard",
+    desc: "dashboard website for spell me game app",
+    img: spellmewebcover.src,
     key: 2,
   },
-  {
-    title: "amin web",
-    desc: "web wordpress website",
-    img: "",
-    key: 3,
-  },
-  {
-    title: "sofya web",
-    desc: "web wordpress website",
-    img: "",
-    key: 4,
-  },
+  // {
+  //   title: "amin web",
+  //   desc: "web wordpress website",
+  //   img: "",
+  //   key: 3,
+  // },
+  // {
+  //   title: "sofya web",
+  //   desc: "web wordpress website",
+  //   img: "",
+  //   key: 4,
+  // },
 ];
 const mobileList = [
   {
-    title: "Newsi app",
-    desc: "web wordpress website",
-    img: "",
+    title: "Service supplier app",
+    desc: "multi platform flutter app for delivering services indoor",
+    img: suppliercover.src,
     key: 5,
   },
   {
-    title: "Spell me app",
-    desc: "web wordpress website",
-    img: "",
+    title: "SpellMe app",
+    desc: "real-time challenging quiz game for imporving spelling skills",
+    img: spellmeapp.src,
     key: 6,
+  },
+  {
+    title: "Family market app",
+    desc: "android & ios mobile app for groceries daily shopping ",
+    img: familycover.src,
+    key: 7,
   },
 ];
 

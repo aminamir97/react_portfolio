@@ -14,7 +14,7 @@ export const ProjectItem = (props) => {
     >
       <div className="h_gallery_item">
         <div className="g_img_item">
-          <img className="img-fluid" src="img/gallery/project-1.jpg" alt="" />
+          <img className="img-fluid" src={props.data.img} alt="" />
           <div className="light" onClick={() => setShowModal(true)}>
             <img src="img/gallery/icon.png" alt="" />
           </div>
