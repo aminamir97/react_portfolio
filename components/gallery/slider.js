@@ -6,14 +6,19 @@ import flutter from "../../assets/kabbash.png";
 import newsi from "../../assets/newsi.jpg";
 
 export const Slider = (propsImages) => {
+  const slides = propsImages.items;
   return (
     <Splide>
-      <SplideSlide key={"22"}>
+     {slides.map(  (img)=>{
+       return (
+        <SplideSlide key={"22"}>
         <div className="sliderdev">
-          <img src={flutter.src} className="imgslider" />
+          <img src={img} className="imgslider" />
         </div>
       </SplideSlide>
-      <SplideSlide key={"21"}>
+       );
+     } )}
+      {/* <SplideSlide key={"21"}>
         <div className="sliderdev">
           <img src={flutter.src} className="imgslider" />
         </div>
@@ -27,7 +32,7 @@ export const Slider = (propsImages) => {
         <div className="sliderdev">
           <img src={flutter.src} className="imgslider" />
         </div>
-      </SplideSlide>
+      </SplideSlide> */}
     </Splide>
   );
 };

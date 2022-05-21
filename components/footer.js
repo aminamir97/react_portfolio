@@ -3,7 +3,7 @@ import React from "react";
 
 export const FooterSection = () => {
   return (
-    <footer className="footer_area p_120">
+    <footer id="footer" className="footer_area p_120">
       <div className="container">
         <div className="row footer_inner">
           <div className="col-lg-5 col-sm-6">
@@ -12,30 +12,14 @@ export const FooterSection = () => {
                 <h3>About Me</h3>
               </div>
               <p>
-                Do you want to be even more successful? Learn to love learning
-                and growth. The more effort you put into improving your skills,
+               Would love to keep working on improving myself in the tech field , looking forward for more success and will be more glad to hear from you 
               </p>
-              <p>
-                {" "}
-                Link back to Colorlib cant be removed. Template is licensed
-                under CC BY 3.0. Copyright &copy;
-                {new Date().getFullYear()}
-                All rights reserved | This template is made with{" "}
-                <i className="fa fa-heart-o" aria-hidden="true"></i> by{" "}
-                <a
-                  href="https://colorlib.com"
-                  // target="_blank"
-                >
-                  Colorlib
-                </a>
-                Link back to Colorlib cant be removed. Template is licensed
-                under CC BY 3.0.{" "}
-              </p>
+             
             </aside>
           </div>
           <div className="col-lg-5 col-sm-6">
             <aside className="f_widget news_widget">
-              <div className="f_title">
+              {/* <div className="f_title">
                 <h3>Newsletter</h3>
               </div>
               <p>Stay updated with our latest trends</p>
@@ -59,7 +43,7 @@ export const FooterSection = () => {
                   </div>
                   <div className="mt-10 info"></div>
                 </form>
-              </div>
+              </div> */}
             </aside>
           </div>
           <div className="col-lg-2">
@@ -67,26 +51,26 @@ export const FooterSection = () => {
               <div className="f_title">
                 <h3>Follow Me</h3>
               </div>
-              <p>Let us be social</p>
+              <p>Lets keep in touch</p>
               <ul className="list">
                 <li>
-                  <a href="#">
+                <a href="https://www.facebook.com/profile.php?id=100008950745508">
                     <i className="fa fa-facebook"></i>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#">
                     <i className="fa fa-twitter"></i>
                   </a>
-                </li>
+                </li> */}
                 <li>
-                  <a href="#">
-                    <i className="fa fa-dribbble"></i>
+                <a href="https://www.linkedin.com/in/amin-alameer-ab866b11a/">
+                    <i className="fa fa-linkedin"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fa fa-behance"></i>
+                  <a href="https://www.instagram.com/amain.jo/?hl=en">
+                    <i className="fa fa-instagram"></i>
                   </a>
                 </li>
               </ul>

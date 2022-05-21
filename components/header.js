@@ -37,7 +37,7 @@ export default function MyHeader() {
                 style={{ borderRadius: "10px" }}
               />
             </a>
-            <button
+            {/* <button
               className="navbar-toggler"
               type="button"
               data-toggle="collapse"
@@ -49,7 +49,7 @@ export default function MyHeader() {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
-            </button>
+            </button> */}
             {/* <!-- Collect the nav links, forms, and other content for toggling --> */}
             <div
               className="collapse navbar-collapse offset"
@@ -57,71 +57,30 @@ export default function MyHeader() {
             >
               <ul className="nav navbar-nav menu_nav ml-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="index.html">
+                  <a className="nav-link" href="#">
                     Home
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="about-us.html">
+                  <a className="nav-link" href="#about">
                     About
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="services.html">
-                    Services
+                  <a className="nav-link" href="#timeline">
+                    Timeline
                   </a>
-                </li>
-                <li className="nav-item submenu dropdown">
-                  <a
-                    href="#"
-                    className="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Pages
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li className="nav-item">
-                      <a className="nav-link" href="portfolio.html">
-                        Portfolio
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="elements.html">
-                        Elements
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item submenu dropdown">
-                  <a
-                    href="#"
-                    className="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Blog
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li className="nav-item">
-                      <a className="nav-link" href="blog.html">
-                        Blog
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="single-blog.html">
-                        Blog Details
-                      </a>
-                    </li>
-                  </ul>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="contact.html">
-                    Contact
+                  <a className="nav-link" href="#skills">
+                    Skills
+                  </a>
+                </li>
+          
+         
+                <li className="nav-item">
+                  <a className="nav-link" href="#projects">
+                    Projects
                   </a>
                 </li>
               </ul>

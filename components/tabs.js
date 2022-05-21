@@ -89,7 +89,7 @@ export const TabsSection = () => {
   }, [isVisible]);
   return (
     //   <!--================My Tabs Area =================-->
-    <section ref={re} className={classy}>
+    <section id="timeline" ref={re} className={classy}>
       <div className="container">
         <div className="tabs_inner">
           <ul className="nav nav-tabs" id="myTab" role="tablist">

@@ -27,7 +27,7 @@ export const ProjectItem = (props) => {
       <Modal open={showModal} onClose={() => setShowModal(true)}>
         <Fade in={showModal}>
           <Box className="sliderPArent">
-            <Slider />
+            <Slider items={props.data.slides} />
             <Button
               variant="contained"
               sx={{ justifySelf: "center" }}

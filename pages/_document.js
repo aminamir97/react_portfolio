@@ -1,9 +1,12 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   return (
     <Html>
       <Head>
+
+        
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
@@ -24,6 +27,7 @@ export default function Document() {
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/responsive.css" />
       </Head>
+      
       <body>
         <Main />
         <NextScript />

@@ -21,7 +21,7 @@ export const AboutMe = () => {
       }
   }, [isVisible]);
   return (
-    <section ref={re} className={classy}>
+    <section id="about" ref={re} className={classy}>
       <div className="container">
         <div className="row welcome_inner">
           <div className="col-lg-6">

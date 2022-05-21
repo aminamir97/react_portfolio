@@ -6,7 +6,7 @@ import agile from "../assets/agile.png";
 
 export const FeatureSection = (props) => {
   return (
-    <section ref={props.ref} className="feature_area p_120">
+    <section id="skills" ref={props.ref} className="feature_area p_120">
       <div className="container">
         <div className="main_title">
           <h2>My Skills</h2>
