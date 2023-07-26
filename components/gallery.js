@@ -62,14 +62,14 @@ const webList = [
     title: "alkabbash website",
     desc: "real-estate business website",
     img: kabbashcover.src,
-    slides: [k1.src , k2.src , k3.src],
+    slides: [k1.src, k2.src, k3.src],
     key: 1,
   },
   {
     title: "SpellMe dashboard",
     desc: "dashboard website for spell-me game app",
     img: spellmewebcover.src,
-    slides: [sw1.src ,sw2.src , sw3.src],
+    slides: [sw1.src, sw2.src, sw3.src],
     key: 2,
 
   },
@@ -92,16 +92,14 @@ const mobileList = [
     desc: "international news app accross the world",
     img: newsicover.src,
     key: 9,
-    slides: [nw1.src ,nw2.src , nw3.src , nw4.src],
-
-
+    slides: [nw1.src, nw2.src, nw3.src, nw4.src],
   },
   {
     title: "Service supplier app",
     desc: "multi platform flutter app for delivering services indoor",
     img: suppliercover.src,
     key: 5,
-    slides: [ss1.src ,ss2.src , ss3.src , ss4.src],
+    slides: [ss1.src, ss2.src, ss3.src, ss4.src],
 
   },
   {
@@ -109,7 +107,7 @@ const mobileList = [
     desc: "real-time challenging quiz game for imporving spelling skills",
     img: spellmeapp.src,
     key: 6,
-    slides: [sm1.src ,sm2.src , sm3.src],
+    slides: [sm1.src, sm2.src, sm3.src],
 
   },
   {
@@ -117,7 +115,7 @@ const mobileList = [
     desc: "android & ios mobile app for groceries daily shopping ",
     img: familycover.src,
     key: 7,
-    slides: [f1.src ,f2.src , f3.src],
+    slides: [f1.src, f2.src, f3.src],
 
   },
   {
@@ -125,10 +123,10 @@ const mobileList = [
     desc: "multi platform flutter app for delivering services indoor",
     img: customer.src,
     key: 8,
-    slides: [ssc1.src ,ssc2.src , ssc3.src , ssc4.src,ssc5.src],
+    slides: [ssc1.src, ssc2.src, ssc3.src, ssc4.src, ssc5.src],
 
   },
- 
+
 ];
 
 export const Gallery = () => {

@@ -4,7 +4,17 @@ import { OneListTree } from "./tabsCompnents/oneTabTree";
 import { OneListTree2 } from "./tabsCompnents/oneTabTree2";
 const experiances = [
   {
-    date: "March 2022 to present ",
+    date: "April 2023 to present ",
+    title: "Estarta / Jordan",
+    desc: ["Senior Flutter dev", "Backend Developer Node Js"],
+  },
+  {
+    date: "2023 to present ",
+    title: "MenaItech / Jordan",
+    desc: ["Senior mobile dev"],
+  },
+  {
+    date: "Feb 2022 to April 2023 ",
     title: "Ascot Tech / Jordan",
     desc: ["Web dev Full stack", "Flutter dev"],
   },
@@ -34,7 +44,7 @@ const experiances = [
     ],
   },
   {
-    date: "May 2018 to Apr 2019 ",
+    date: "Feb 2018 to Jan 2019 ",
     title: "Mobile & web Freelancing",
     desc: ["Flutter dev", "Android dev", "Web full stack", "Database mng"],
   },

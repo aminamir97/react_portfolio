@@ -64,7 +64,7 @@ export const AboutMe = () => {
               <div className="skill_main" style={{}}>
                 <div className="skill_item">
                   <h4>
-                    React JS <span className="counter">70</span>%
+                    React JS <span className="counter">90</span>%
                   </h4>
                   <div className="progress_br">
                     <div
@@ -87,6 +87,28 @@ export const AboutMe = () => {
                 <div className="skill_item">
                   <h4>
                     Flutter <span className="counter">90</span>%
+                  </h4>
+                  <div className="progress_br">
+                    <div
+                      className="progress"
+                      style={{
+                        width: "90%",
+                        background: "linear-gradient(#314755 0%, #26a0da 100%)",
+                      }}
+                    >
+                      <div
+                        className="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="skill_item">
+                  <h4>
+                    Node JS <span className="counter">90</span>%
                   </h4>
                   <div className="progress_br">
                     <div

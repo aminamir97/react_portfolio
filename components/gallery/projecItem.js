@@ -25,15 +25,28 @@ export const ProjectItem = (props) => {
         </div>
       </div>
       <Modal open={showModal} onClose={() => setShowModal(true)}>
+
         <Fade in={showModal}>
-          <Box className="sliderPArent">
+          <Box >
+
             <Slider items={props.data.slides} />
+
             <Button
-              variant="contained"
-              sx={{ justifySelf: "center" }}
+              // variant="contained"
+              // sx={{ justifySelf: "center" }}
               onClick={() => setShowModal(false)}
             >
-              <CloseIcon />
+              <CloseIcon sx={{
+                width: 50,
+                height: 50,
+                bgcolor: "rgb(240, 255, 255)",
+                borderRadius: 20,
+                "position": "fixed",
+                "top": "2%",
+                "left": "5%",
+                "z-index": 1000000
+              }} />
+
             </Button>
           </Box>
         </Fade>

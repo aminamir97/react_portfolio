@@ -29,7 +29,7 @@ export const HeaderOver = () => {
                 <div className="personal_text">
                   <h6>Hello Everybody, this is</h6>
                   <h3>Amin Alameer</h3>
-                  <h4>Intermediate Software Developer</h4>
+                  <h4>Senior Software Developer</h4>
                   <p>
                     Always believing that the key of success is being passionate
                     , working in Web full-stack & Mobile developement including

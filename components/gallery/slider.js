@@ -8,31 +8,17 @@ import newsi from "../../assets/newsi.jpg";
 export const Slider = (propsImages) => {
   const slides = propsImages.items;
   return (
-    <Splide>
-     {slides.map(  (img)=>{
-       return (
-        <SplideSlide key={"22"}>
-        <div className="sliderdev">
-          <img src={img} className="imgslider" />
-        </div>
-      </SplideSlide>
-       );
-     } )}
-      {/* <SplideSlide key={"21"}>
-        <div className="sliderdev">
-          <img src={flutter.src} className="imgslider" />
-        </div>
-      </SplideSlide>
-      <SplideSlide key={"11"}>
-        <div className="sliderdev">
-          <img src={newsi.src} className="imgslider" />
-        </div>
-      </SplideSlide>
-      <SplideSlide key={"33"}>
-        <div className="sliderdev">
-          <img src={flutter.src} className="imgslider" />
-        </div>
-      </SplideSlide> */}
+    <Splide >
+      {slides.map((img) => {
+        return (
+          <SplideSlide key={"22"}>
+            <div className="sliderdev">
+              <img src={img} className="imgslider" />
+            </div>
+          </SplideSlide>
+        );
+      })}
+
     </Splide>
   );
 };
